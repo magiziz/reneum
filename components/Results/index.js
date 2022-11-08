@@ -1,10 +1,11 @@
 import React from "react";
+import { OverviewResults } from "./styles";
 
-const Results = () => {
+const Results = ({ data }) => {
   return (
-    <div>
+    <S.OverviewResults>
       <h1>Results</h1>
-    </div>
+    </S.OverviewResults>
   );
 };
 

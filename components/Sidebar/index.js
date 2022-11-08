@@ -1,10 +1,23 @@
 import React from "react";
 import * as S from "./styles";
+import { lists } from "../../helpers";
+import ListCollapse from "../ListCollapse";
 
-const Sidebar = () => {
+// Sidebar component
+const Sidebar = ({ technology, price, location, onChangeCategory }) => {
   return (
     <S.Sidebar>
-      <h1>123</h1>
+      {lists.map(({ name, lists }) => (
+        <ListCollapse
+          key={name}
+          technology={technology}
+          price={price}
+          location={location}
+          listName={name}
+          lists={lists}
+          onChangeCategory={onChangeCategory}
+        />
+      ))}
     </S.Sidebar>
   );
 };
