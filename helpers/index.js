@@ -35,4 +35,13 @@ export const dummyData = [
   { location: "argentina", type: "wind", price: 853 },
   { location: "india", type: "wind", price: 1250 },
   { location: "pakistan", type: "solar", price: 3500 },
+  { location: "argentina", type: "solar", price: 500 },
+  { location: "india", type: "electric", price: 531 },
+  { location: "pakistan", type: "solar", price: 1234 },
+  { location: "argentina", type: "electric", price: 500 },
+  { location: "india", type: "wind", price: 555 },
+  { location: "pakistan", type: "solar", price: 4000 },
+  { location: "argentina", type: "wind", price: 500 },
+  { location: "india", type: "wind", price: 3125 },
+  { location: "pakistan", type: "solar", price: 500 },
 ];

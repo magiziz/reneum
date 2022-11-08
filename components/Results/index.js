@@ -1,10 +1,23 @@
 import React from "react";
-import { OverviewResults } from "./styles";
+import * as S from "./styles";
+import EnergyCard from "../EnergyCard";
 
 const Results = ({ data }) => {
   return (
     <S.OverviewResults>
-      <h1>Results</h1>
+      {data.length ? (
+        data.map(({ location, type, price }, index) => (
+          <EnergyCard
+            key={index}
+            index={index}
+            location={location}
+            type={type}
+            price={price}
+          />
+        ))
+      ) : (
+        <S.NotFound>Sorry the cards you filtered does not exist</S.NotFound>
+      )}
     </S.OverviewResults>
   );
 };

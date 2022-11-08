@@ -3,6 +3,7 @@ import * as S from "./styles";
 import Results from "../../components/Results";
 import Sidebar from "../../components/Sidebar";
 import { dummyData } from "../../helpers";
+import Navbar from "../../components/Navbar";
 
 // Home View component
 // Being used in /pages/index.js as a home page
@@ -91,6 +92,8 @@ const HomeView = () => {
 
   return (
     <S.HomeFullScreen>
+      <Navbar />
+      <S.ReneumTitle>Reneum Marketplace</S.ReneumTitle>
       <S.OverviewFlexBox>
         <Sidebar
           technology={technology}

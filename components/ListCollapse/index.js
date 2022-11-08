@@ -12,7 +12,7 @@ const ListCollapse = ({
   location,
   onChangeCategory,
 }) => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   return (
     <S.ListCollapse>
